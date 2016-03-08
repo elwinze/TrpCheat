@@ -94,7 +94,16 @@
                                                                                                       </block>
                                                                                                     </value>
                                                                                                     <next>
-                                                                                                      <block type="movement_stop" id="160"></block>
+                                                                                                      <block type="robot_delay" id="161" inline="true">
+                                                                                                        <value name="DELAY">
+                                                                                                          <block type="math_number" id="162">
+                                                                                                            <field name="NUM">5000</field>
+                                                                                                          </block>
+                                                                                                        </value>
+                                                                                                        <next>
+                                                                                                          <block type="movement_stop" id="160"></block>
+                                                                                                        </next>
+                                                                                                      </block>
                                                                                                     </next>
                                                                                                   </block>
                                                                                                 </next>
